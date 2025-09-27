@@ -1,25 +1,57 @@
 
+* {
+    box-sizing: border-box;
+    /* makes padding and borders part of the total width/height */
+    margin: 0;
+    padding: 0;
+}
+/* this will push the body down so the header doesn't cover it */
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 1.5;
+    color: #222;
+    background-color: #f9f9f7;
+     /* light ivory-ish background */
+     padding-top: 165px;
+
+}
+
 header {
     background-color: #0b3d2e; /* dark forest green */
-    padding: 15px;
-    
+    padding: 20px;
+    padding-top: 30px;
+    text-align: center;
+    position: fixed;
+    /* makes it stay at the top when you scroll */
+
     top: 0;
     left: 0;
     width: 100%; /* stretch across the screen */
+    z-index: 1000; /* makes sure it stays on top of other content */
+
+}
+header h1 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 9px;
+    font-family: 'Merriweather', serif; /* this is a more historic lookin font*/
+}
+
+header p {
+    color: #a2d5c6;
+    font-size: 18px;
 }
 
 /*navigation bar setup */
 nav ul {
     list-style: none;   
-    /* removes bullets */
+    /* removes bullet points in lists */
     display: flex;      
     /* makes theitems go side by side */
     justify-content: center;
      /* centers it across the header */
     gap: 30px;
     /* space between items */
-    margin: 0;
-    padding: 0;
 }
 
 /* nav li {
@@ -30,49 +62,105 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+
+    transition: color 0.3s;
+    /* makes a smooth color change on hover */
+
 }
 
 nav a:hover {
-    color: #a2d5c6;
+    color: #f1c40f; /*hover gold color*/
 }
 
 /* this will push the body down so the header doesn't cover it */
-body {
+/*body {
     padding-top: 70px;
-}
+}    */
 
 /*css grid for the home page*/
 main {
     display: grid;
     /*makes it a grid*/
-    grid-template-columns: 1fr 1fr;
-    /* 2 equal columns */
+    grid-template-columns: 2fr 1fr;
+    /* 2 columns, abstract column should be wider */
     max-width: 1200px;
-    margin: 30px auto;
-    gap: 20px;
+    margin: 35px auto;
+    gap: 24px;
     padding: 16px
 
 }
 section {
     background: white;
-    padding: 16px;
+    padding: 18px;
     border-left: 5px solid #0b3d2e;
     /*might give it a forest green accent (CHECK BACK)*/
+    border-radius: 9px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* box-shadow gives a slight shadow effect*/
+
+}
+section h2 {
+    color: #0b3d2e;
+    margin-bottom: 12px;
+    font-family: 'Merriweather', serif; /* this is a more historic lookin font*/
+    font-size: 20px;
+    padding-top:20px
 }
 /*formatting for the abstract and table of contents to be side by side*/
 
 .abstract {
-    grid-column: 1; /* makes a left column */
-    grid-row: 1; /* first row */
+    grid-column: 1; 
+    /* makes a left column */
+    grid-row: 1; 
+    /* first row */
 }
 
-.toc {
-    grid-column: 2; /* makes a right column */
-    grid-row: 1; /* first row (the same as the one for .abstract) */    
+.tableofcontent {
+    list-style-type: none;
+    grid-column: 2;
+     /* makes a right column */
+    grid-row: 1; 
+    /* first row (the same as the one for .abstract) */    
 }
 
 .keyterms {
-    grid-column: 2; /* makes a right column*/
-    grid-row: 2; /* puts it below the table of contents */
+    list-style-type: none;
+    grid-column: 2;
+     /* makes a right column*/
+    grid-row: 2; 
+    /* puts it below the table of contents */
 }
 
+/*styling for the about page*/
+.about-container {
+    display : flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px; /* or 40px 10% */
+    gap: 25px;
+}
+.about-intro {
+    flex: 1;
+    /* it will takes up half the space */
+    
+}
+.about-team {
+    flex: 1;
+
+}
+.about-team .member {
+    margin-bottom: 20px;
+    background: #f9f9f7;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* box-shadow gives a  shadow effect*/
+}
+.about-team img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; 
+    /* makes it a circle */
+    object-fit: cover;
+    /* makes sure the image covers the area */
+    margin-bottom: 8px;
+    
+}
