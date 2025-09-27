@@ -7,18 +7,26 @@
 }
 /* this will push the body down so the header doesn't cover it */
 body {
-    font-family: 'Inter', Arial, sans-serif;
-    line-height: 1.5;
-    color: #222;
-    background-color: #f9f9f7;
+    font-family: 'Poppins', 'Inter', Arial, sans-serif;
+    line-height: 1.6;
+    color: #2b2b2b;
+    background-color: #fdfaf5;
      /* light ivory-ish background */
      padding-top: 165px;
 
 }
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Poppins', serif; /*simple font for readability and styl*/
+    color: #8a4b2f; /* dark burnt orange */
+    font-weight:600;
+}
 
 header {
-    background-color: #0b3d2e; /* dark forest green */
-    padding: 20px;
+    background-color: #b5542c; /*burnt organe */
+    padding: 20px 30px;
     padding-top: 30px;
     text-align: center;
     position: fixed;
@@ -29,17 +37,21 @@ header {
     width: 100%; /* stretch across the screen */
     z-index: 1000; /* makes sure it stays on top of other content */
 
+
 }
 header h1 {
-    color: white;
+    color: #fff; /* off white/cream*/
     font-size: 32px;
     margin-bottom: 9px;
-    font-family: 'Merriweather', serif; /* this is a more historic lookin font*/
+    font-family: 'Poppins', serif; /*simple font for readability and styl*/
+    font-weight:500;
+    /*letter spacing: 1px;*/
 }
 
-header p {
-    color: #a2d5c6;
+h1 p {
+    color: #694908; /* light gold color */
     font-size: 18px;
+    font-weight: 200;
 }
 
 /*navigation bar setup */
@@ -52,6 +64,7 @@ nav ul {
      /* centers it across the header */
     gap: 30px;
     /* space between items */
+    margin-top: 12px;
 }
 
 /* nav li {
@@ -59,17 +72,19 @@ nav ul {
 } */
 
 nav a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 19px;
 
-    transition: color 0.3s;
+    transition: color 0.4s;
     /* makes a smooth color change on hover */
 
 }
 
 nav a:hover {
-    color: #f1c40f; /*hover gold color*/
+    color: #f7d79e; /*Gold color when hovered over*/
+
 }
 
 /* this will push the body down so the header doesn't cover it */
@@ -84,25 +99,33 @@ main {
     grid-template-columns: 2fr 1fr;
     /* 2 columns, abstract column should be wider */
     max-width: 1200px;
-    margin: 35px auto;
+    margin: 40px auto;
     gap: 24px;
-    padding: 16px
+    padding: 18px
 
 }
+main section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #8a4b2f;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 200;
+}
 section {
-    background: white;
+    background: #fff;
     padding: 18px;
-    border-left: 5px solid #0b3d2e;
-    /*might give it a forest green accent (CHECK BACK)*/
+    /*border-left: 5px solid #0b3d2e;
+    gives an accent on the left of each sectionbox*/
     border-radius: 9px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* box-shadow gives a slight shadow effect*/
 
 }
 section h2 {
-    color: #0b3d2e;
+    color: #8a4b2f;
     margin-bottom: 12px;
-    font-family: 'Merriweather', serif; /* this is a more historic lookin font*/
+    font-family: 'Poppins', sans-serif; 
     font-size: 20px;
+    font-style:  500;
     padding-top:20px
 }
 /*formatting for the abstract and table of contents to be side by side*/
@@ -149,7 +172,7 @@ section h2 {
 }
 .about-team .member {
     margin-bottom: 20px;
-    background: #f9f9f7;
+    background: #fffdf9;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* box-shadow gives a  shadow effect*/
