@@ -1,7 +1,78 @@
+
+header {
+    background-color: #0b3d2e; /* dark forest green */
+    padding: 15px;
+    
+    top: 0;
+    left: 0;
+    width: 100%; /* stretch across the screen */
+}
+
+/*navigation bar setup */
+nav ul {
+    list-style: none;   
+    /* removes bullets */
+    display: flex;      
+    /* makes theitems go side by side */
+    justify-content: center;
+     /* centers it across the header */
+    gap: 30px;
+    /* space between items */
+    margin: 0;
+    padding: 0;
+}
+
+/* nav li {
+
+} */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #a2d5c6;
+}
+
+/* this will push the body down so the header doesn't cover it */
 body {
-  background-color: rgb(227, 227, 227);
+    padding-top: 70px;
 }
-h1 {
-  color: white;
-  text-align: center;
+
+/*css grid for the home page*/
+main {
+    display: grid;
+    /*makes it a grid*/
+    grid-template-columns: 1fr 1fr;
+    /* 2 equal columns */
+    max-width: 1200px;
+    margin: 30px auto;
+    gap: 20px;
+    padding: 16px
+
 }
+section {
+    background: white;
+    padding: 16px;
+    border-left: 5px solid #0b3d2e;
+    /*might give it a forest green accent (CHECK BACK)*/
+}
+/*formatting for the abstract and table of contents to be side by side*/
+
+.abstract {
+    grid-column: 1; /* makes a left column */
+    grid-row: 1; /* first row */
+}
+
+.toc {
+    grid-column: 2; /* makes a right column */
+    grid-row: 1; /* first row (the same as the one for .abstract) */    
+}
+
+.keyterms {
+    grid-column: 2; /* makes a right column*/
+    grid-row: 2; /* puts it below the table of contents */
+}
+
