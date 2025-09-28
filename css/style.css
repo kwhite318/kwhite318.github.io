@@ -21,7 +21,7 @@ h1 {
     text-align: center;
     font-family: 'Poppins', serif; /*simple font for readability and styl*/
     color: #8a4b2f; /* dark burnt orange */
-    font-weight:600;
+    font-weight:00;
 }
 
 header {
@@ -109,6 +109,13 @@ main section h2 {
     margin-bottom: 15px;
     color: #8a4b2f;
     font-family: 'Poppins', sans-serif; 
+    font-weight: 200;
+}
+main section li {
+    font-size: 16px;
+    margin-top: 6px;
+    margin-left: 20px;
+    color: #2b2b2b; 
     font-weight: 200;
 }
 section {
