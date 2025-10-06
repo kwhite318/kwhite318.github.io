@@ -231,3 +231,46 @@ section h3{
     margin-bottom: 8px;
     
 }
+.side-caption {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+  margin: 20px 0;
+}
+
+.side-caption img {
+  max-width: 100%;
+  height: auto;
+}
+
+.side-caption figcaption {
+  font-size: 14px;
+  font-style: italic;
+  color: black;
+}
+
+.side-captionleft {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 20px;
+  margin: 0px;
+}
+.side-captionleft img {
+  max-width: 100%;
+  height: auto;
+}
+
+.side-captionleft figcaption {
+  font-size: 14px;
+  font-style: italic;
+  color: black;
+}
+
+.image-grow img {
+  transition: transform 0.3s ease;
+}
+
+.image-grow img:hover {
+  transform: scale(1.1);  /* Slightly enlarges the image when hovered */
+}
