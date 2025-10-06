@@ -5,6 +5,22 @@
     margin: 0;
     padding: 0;
 }
+
+/* changes to the links style */
+a { 
+    color: black;
+    text-decoration: none;
+    /* removes the underline */
+    font-weight: 500;
+    transition: color 0.3s;
+    /* makes a smooth color change on hover */
+}
+a:hover {
+    color:#694908; /* burnt orange when hovered over */
+    text-decoration: underline; /*so the user can see what they are hovering over */
+}
+
+
 /* this will push the body down so the header doesn't cover it */
 body {
     font-family: 'Poppins', 'Inter', Arial, sans-serif;
@@ -53,6 +69,14 @@ h1 p {
     font-size: 18px;
     font-weight: 200;
 }
+#subtitle {
+    font-family: 'Poppins',serif;
+    font-size: 18px;
+    color: #694908;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 4px;
+}
 
 /*navigation bar setup */
 nav ul {
@@ -78,7 +102,7 @@ nav a {
     font-size: 19px;
 
     transition: color 0.4s;
-    /* makes a smooth color change on hover */
+    /* smooth color change on hover */
 
 }
 
@@ -138,7 +162,6 @@ section h2 {
     margin-bottom: 12px;
     font-family: 'Poppins', sans-serif; 
     font-size: 20px;
-    font-style:  500;
     padding-top:20px
 }
 section h3{
