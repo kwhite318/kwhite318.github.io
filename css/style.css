@@ -206,12 +206,20 @@ html {
 
 .reset {
     background-color: #8a4b2f;
-    color: black;
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
   }
+
+.button-grow {
+  transition: transform 0.3s ease;
+}
+
+.button-grow:hover {
+  transform: scale(1.1); /* Slightly enlarges the button when hovered */
+}
 
 /*formatting for the abstract and table of contents to be side by side*/
 
