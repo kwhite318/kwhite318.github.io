@@ -204,7 +204,7 @@ html {
     cursor: pointer;
   }
 
-  .reset {
+.reset {
     background-color: #8a4b2f;
     color: black;
     padding: 10px 20px;
