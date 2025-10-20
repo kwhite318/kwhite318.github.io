@@ -180,6 +180,9 @@ input[type="radio"] {
 input[type="checkbox"] {
   accent-color: #8a4b2f; 
 }
+input[type="text"] {
+  border: 2px solid #8a4b2f; 
+}
 
 /*formatting for the abstract and table of contents to be side by side*/
 
