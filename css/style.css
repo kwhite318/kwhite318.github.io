@@ -194,6 +194,24 @@ html {
   position: sticky;
   align-self: start;
 }
+/* button style */
+.submit {
+    background-color: #8a4b2f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .reset {
+    background-color: #8a4b2f;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
 
 /*formatting for the abstract and table of contents to be side by side*/
 
