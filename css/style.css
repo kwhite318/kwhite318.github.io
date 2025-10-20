@@ -172,6 +172,11 @@ section h3{
     font-style:  500;
     padding-top:20px
 }
+/* Change color of the radio */
+input[type="radio"] {
+  accent-color: #8a4b2f; 
+}
+
 /*formatting for the abstract and table of contents to be side by side*/
 
 .abstract {
