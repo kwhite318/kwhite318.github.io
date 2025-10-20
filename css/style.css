@@ -184,6 +184,11 @@ input[type="text"]:focus {
   border-color: #8a4b2f; 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 /*formatting for the abstract and table of contents to be side by side*/
 
 .abstract {
