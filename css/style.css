@@ -180,14 +180,19 @@ input[type="radio"] {
 input[type="checkbox"] {
   accent-color: #8a4b2f; 
 }
+/* Change the input border color */
 input[type="text"]:focus {
   border-color: #8a4b2f; 
 }
-
+/* change scrolling */
 html {
   scroll-behavior: smooth;
 }
 
+/* scrolling side panel */
+.question {
+  position: static; 
+}
 
 /*formatting for the abstract and table of contents to be side by side*/
 
