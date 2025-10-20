@@ -176,6 +176,10 @@ section h3{
 input[type="radio"] {
   accent-color: #8a4b2f; 
 }
+/* Change the checkmark color */
+input[type="checkbox"] {
+  accent-color: #0077cc; 
+}
 
 /*formatting for the abstract and table of contents to be side by side*/
 
