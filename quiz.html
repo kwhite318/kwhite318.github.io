@@ -29,14 +29,14 @@
   <main class = "quiz-container"> <!-- Main Content Area -->
     <!--putting the references on the left-->
     <section class = "quiz-list">
-      <h2>Question 1</h2> <!--Fill in the blank-->
+      <h2 id="q1">Question 1</h2> <!--Fill in the blank-->
       <p>Which web browser was the first to display images in line with text?</p>
       <form>
         <label for="answer">Answer:</label><br>
         <input type="text" id="answer" name="answer"><br>
       </form>
        
-      <h2>Question 2</h2>
+      <h2 id="q2">Question 2</h2>
       <p>What is AI Accessibility? (Choose multiple answers)</p> <!--Multiple answers-->
       <form>
         <input type="checkbox"  id="a" name ="q2" value="A">
@@ -47,7 +47,7 @@
         <label for= "c">AI for tasks like automated alt text and image description, and AI-powered navigation assistance</label><br>
       </form>
         
-      <h2>Question 3</h2> <!--Multiple choice-->
+      <h2 id="q3">Question 3</h2> <!--Multiple choice-->
       <p>Which browser is developed by the Mozilla Foundation?</p>
       <form>
         <input type="radio"  id="firefox" name ="q3" value="Firefox">
@@ -60,7 +60,7 @@
         <label for= "blink">Chrome</label><br>
       </form>
         
-      <h2>Question 4</h2> <!--Multiple choice-->
+      <h2 id="q4">Question 4</h2> <!--Multiple choice-->
       <p>What is the default web browser for Windows 10 and later?</p>
       <form>
         <input type="radio"  id="microsoft1" name ="q4" value="Microsoft">
@@ -73,7 +73,7 @@
         <label for= "blink">Netscape</label><br>
       </form>
         
-      <h2>Question 5</h2> <!--Multiple choice-->
+      <h2 id="q5">Question 5</h2> <!--Multiple choice-->
       <p>Which of the following is not the major evolution of the Hypertext transfer protocol (HTTP)?</p>
       <form>
         <input type="radio"  id="http9" name ="q5" value="Http9">
@@ -92,12 +92,11 @@
       <h2>Questions</h2>
       <p>
       <ol>
-        <li><a href="https://web.dev/articles/howbrowserswork">How Browsers Work</a></li>
-        <li><a href="https://www.khanacademy.org/computing/computer-science/internet-intro">How the Internet Works</a></li>
-        <li><a href="https://www.youtube.com/watch?v=BrXPcaRlBqo">YouTube: "What is a Web Browser?" by Google</a></li>
-        <li><a href="https://www.mozilla.org/en-US/privacy/">Mozilla Privacy Hub</a></li>
-        <li><a href="https://developer.mozilla.org/en-US/play">Web Browser Simulator: See How Browsers Render Code</a></li>
-        <li><a href="https://thenai.org/how-to-opt-out/web-browser-privacy-settings/">Learn about Privacy Settings in Web Browsers</a></li>
+        <li><a href="#q1">Question 1</a></li>
+        <li><a href="#q2">Question 2</a></li>
+        <li><a href="#q3">Question 3</a></li>
+        <li><a href="#q4">Question 4</a></li>
+        <li><a href="#q5">Question 5</a></li>
       </ol>
       </p>
   </main>
