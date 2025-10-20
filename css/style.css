@@ -178,7 +178,7 @@ input[type="radio"] {
 }
 /* Change the checkmark color */
 input[type="checkbox"] {
-  accent-color: #0077cc; 
+  accent-color: #8a4b2f; 
 }
 
 /*formatting for the abstract and table of contents to be side by side*/
