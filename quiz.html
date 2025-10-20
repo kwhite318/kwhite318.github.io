@@ -31,12 +31,22 @@
     <section class = "quiz-list">
       <h2>Question 1</h2> <!--Fill in the blank-->
       <p>Which web browser was the first to display images in line with text?</p>
+      <form>
+        <label for="answer">Answer:</label><br>
+        <input type="text" id="answer" name="answer"><br>
+      </form>
         <p>Answer</p>
       <h2>Question 2</h2>
       <p>What is AI Accessibility? (Choose multiple answers)</p> <!--Multiple answers-->
-        <p>A</p>
-        <p>B</p>
-        <p>C</p>
+      <form>
+        <input type="radio"  id="a" name ="q2" value="A">
+        <label for= "a">Enhanced integration of Augmented Reality (AR) and Virtual Reality (VR).</label><br>
+        <input type="radio"  id="b" name ="q2" value="B">
+        <label for= "b">Key advancements include improved voice navigation, broader adoption of eye-tracking and haptic feedback</label><br>
+        <input type="radio"  id="c" name ="q2" value="C">
+        <label for= "blink">AI for tasks like automated alt text and image description, and AI-powered navigation assistance</label><br>
+      </form>
+        
       <h2>Question 3</h2> <!--Multiple choice-->
       <p>Which browser is developed by the Mozilla Foundation?</p>
       <form>
@@ -46,6 +56,8 @@
         <label for= "microsoft">Microsoft Edge</label><br>
         <input type="radio"  id="blink" name ="q3" value="Blink">
         <label for= "blink">Blink</label><br>
+        <input type="radio"  id="chrome" name ="q3" value="Chrome">
+        <label for= "blink">Chrome</label><br>
       </form>
         
       <h2>Question 4</h2> <!--Multiple choice-->
@@ -57,6 +69,8 @@
         <label for= "microsoft">Safari</label><br>
         <input type="radio"  id="brave" name ="q4" value="Brave">
         <label for= "blink">Brave</label><br>
+        <input type="radio"  id="netscape" name ="q4" value="Netscape">
+        <label for= "blink">Netscape</label><br>
       </form>
         
       <h2>Question 5</h2> <!--Multiple choice-->
