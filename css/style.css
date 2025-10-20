@@ -191,7 +191,8 @@ html {
 
 /* scrolling side panel */
 .question {
-  position: static; 
+  position: sticky;
+  align-self: start;
 }
 
 /*formatting for the abstract and table of contents to be side by side*/
