@@ -193,9 +193,9 @@ html {
 .question {
   position: sticky;
   align-self: start;
-  position: sticky;
+  grid-column: 2;
+  grid-row: 1;
   top: 100px;        
-  align-self: start; 
   padding: 12px;
   border-left: 2px solid #8a4b2f;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);  
