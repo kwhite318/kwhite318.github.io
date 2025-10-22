@@ -189,6 +189,9 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;  
 }
+form#quizForm {
+  display: contents; /* allows inner elements to follow the grid layout */
+}
 
 /* scrolling side panel */
 .question {
