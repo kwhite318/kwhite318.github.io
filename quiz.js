@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // shows each question feedback
   function makeFeedback(num, correct, ans) {
-    return `<p><strong>question ${num}:</strong> 
+    return `<p><strong>Question ${num}:</strong> 
       <span style="color:${correct ? "green" : "red"}">${correct ? "correct" : "incorrect"}</span> 
       ${!correct ? "— correct: " + ans : ""}
     </p>`
