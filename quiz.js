@@ -114,9 +114,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // show results
     resultsBox.style.display = "block"
     const passed = score >= 3
-    document.getElementById("overallResult").textContent = passed ? "pass ✅" : "fail ❌"
+    document.getElementById("overallResult").textContent = passed ? "Pass ✅" : "FAIL ❌"
     document.getElementById("overallResult").style.color = passed ? "green" : "red"
-    document.getElementById("totalScore").textContent = `score: ${score} / ${maxScore}`
+    document.getElementById("totalScore").textContent = `Score: ${score} / ${maxScore}`
     document.getElementById("questionFeedback").innerHTML = feedback.join("")
   }
 
