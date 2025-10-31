@@ -10,12 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
   //make a results box that shows up after user submit
   const resultsBox = document.createElement("section")
   resultsBox.id = "resultsBox"
-  resultsBox.style.margin = "20px auto"
-  resultsBox.style.maxWidth = "1200px"
-  resultsBox.style.background = "#fff"
-  resultsBox.style.padding = "16px"
-  resultsBox.style.borderRadius = "8px"
-  resultsBox.style.boxShadow = "0 2px 5px rgba(0,0,0,.05)"
+ // resultsBox.style.margin = "20px auto"
+ // resultsBox.style.maxWidth = "1200px"
+ // resultsBox.style.background = "#fff"
+ // resultsBox.style.padding = "16px"
+ // resultsBox.style.borderRadius = "8px"
+ // resultsBox.style.boxShadow = "0 2px 5px rgba(0,0,0,.05)"
   resultsBox.style.display = "none"
   resultsBox.innerHTML = `
     <h2 style="color:#8a4b2f;">Quiz Results</h2>
