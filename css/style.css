@@ -193,6 +193,16 @@ form#quizForm {
   display: contents; /* allows inner elements to follow the grid layout */
 }
 
+#resultsBox {
+  grid-column: 1 / span 2; /* spans both quiz and sidebar columns */
+  background: #fff;
+  padding: 18px;
+  border-radius: 9px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  max-width: 100%; /* makes it match the main grid width */
+}
+
 /* scrolling side panel */
 .question {
   position: sticky;
