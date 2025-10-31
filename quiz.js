@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   resultsBox.style.boxShadow = "0 2px 5px rgba(0,0,0,.05)"
   resultsBox.style.display = "none"
   resultsBox.innerHTML = `
-    <h2 style="color:#8a4b2f;">quiz results</h2>
+    <h2 style="color:#8a4b2f;">Quiz Results</h2>
     <p id="overallResult"></p>
     <p id="totalScore"></p>
     <div id="questionFeedback"></div>
