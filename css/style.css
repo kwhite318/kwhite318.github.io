@@ -194,7 +194,7 @@ form#quizForm {
 }
 
 #resultsBox {
-  grid-column: 1 / span 2; /* spans both quiz and sidebar columns */
+  grid-column: 1 ;
   background: #fff;
   padding: 18px;
   border-radius: 9px;
