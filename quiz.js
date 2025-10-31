@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
     <p id="totalScore"></p>
     <div id="questionFeedback"></div>
   `
-  document.body.appendChild(resultsBox)
+  document.querySelector(".quiz-container").appendChild(resultsBox)
+  //document.body.appendChild(resultsBox)
 
   // correct answers
   const answerKey = {
