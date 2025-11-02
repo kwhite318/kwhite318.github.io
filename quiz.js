@@ -113,6 +113,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // show results
     resultsBox.style.display = "block"
+    // scroll to results
+    resultsBox.scrollIntoView({ behavior: "smooth" });
+    
     const passed = score >= 3
     document.getElementById("overallResult").textContent = passed ? "Pass ✅" : "FAIL ❌"
     document.getElementById("overallResult").style.color = passed ? "green" : "red"
