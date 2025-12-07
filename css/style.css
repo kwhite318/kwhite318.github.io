@@ -345,3 +345,34 @@ form#quizForm {
 .image-grow img:hover {
   transform: scale(1.1);  /* Slightly enlarges the image when hovered */
 }
+
+/* ---------------------- */
+/* MOBILE HEADER */
+/* ---------------------- */
+
+@media (max-width: 700px) {
+
+  /* Make header padding smaller on phones */
+  header {
+    padding: 12px 10px;
+    padding-top: 18px;
+  }
+
+  /* Make nav links wrap instead of overflowing */
+  nav ul {
+    flex-wrap: wrap;
+    gap: 12px;     /* smaller spacing */
+    margin-top: 10px;
+  }
+
+  /* Smaller, easier-to-fit text */
+  nav a {
+    font-size: 15px;
+    padding: 4px 6px;
+  }
+
+  /* Body must move down *more* because header becomes taller */
+  body {
+    padding-top: 210px; /* Adjusted for wrapped navigation */
+  }
+}
