@@ -249,6 +249,14 @@ form#quizForm {
   transform: scale(1.1); /* Slightly enlarges the button when hovered */
 }
 
+/*picture size on topic 2 page*/
+.chart {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
 /*formatting for the abstract and table of contents to be side by side*/
 
 .abstract {
