@@ -148,6 +148,12 @@ main section.key-concepts-1 {
     grid-row: 3; 
     /* third row */
 }
+main section.topic {
+    grid-column: 1 / span 2; 
+    /* makes it span across both columns */
+    grid-row: 3; 
+    /* third row */
+}
 section {
     background: #fff;
     padding: 18px;
