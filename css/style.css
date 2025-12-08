@@ -399,7 +399,9 @@ form#quizForm {
   /* key-concepts layout also becomes single-column */
   .abstract,
   .tableofcontent,
-  .keyterms {
+  .keyterms,
+  .about-intro,
+  .about-team {
     grid-column: 1 /*!important*/;
     grid-row: auto;
   }
