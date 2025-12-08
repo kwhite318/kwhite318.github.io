@@ -329,7 +329,7 @@ form#quizForm {
 }
 
 .side-caption figcaption {
-  font-size: 14px;
+  font-size: 18px;
   font-style: italic;
   color: black;
 }
@@ -347,7 +347,7 @@ form#quizForm {
 }
 
 .side-captionleft figcaption {
-  font-size: 14px;
+  font-size: 18px;
   font-style: italic;
   color: black;
 }
