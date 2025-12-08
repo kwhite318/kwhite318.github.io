@@ -397,10 +397,11 @@ form#quizForm {
   }
 
   /* key-concepts layout also becomes single-column */
-  .keyterms,
+  .abstract,
   .tableofcontent,
-  .abstract {
+  .keyterms {
     grid-column: 1 /*!important*/;
+    grid-row: auto;
   }
 
   /* ------------------------------------------ */
