@@ -346,39 +346,35 @@ form#quizForm {
   transform: scale(1.1);  /* Slightly enlarges the image when hovered */
 }
 
-/* ---------------------- */
-/* MOBILE HEADER */
-/* ---------------------- */
+/* ------------------------------------------ */
+/* MOBILE FIXES FOR ALL PAGES) */
+/* ------------------------------------------ */
 
 @media (max-width: 700px) {
 
-  /* Make header padding smaller on phones */
+  /* Fix header for mobile */
   header {
     padding: 12px 10px;
     padding-top: 18px;
   }
 
-  /* Make nav links wrap instead of overflowing */
   nav ul {
     flex-wrap: wrap;
-    gap: 12px;     /* smaller spacing */
-    margin-top: 10px;
+    gap: 10px;
+    margin-top: 8px;
   }
 
-  /* Smaller, easier-to-fit text */
   nav a {
     font-size: 15px;
     padding: 4px 6px;
   }
 
-  /* Body must move down *more* because header becomes taller */
   body {
-    padding-top: 210px; /* Adjusted for wrapped navigation */
+    padding-top: 220px; /* header becomes taller on mobile */
   }
 
-
   /* ------------------------------------------ */
-  /* Mobile the main grid layout */
+  /* Fix the main grid layout */
   /* ------------------------------------------ */
   main {
     grid-template-columns: 1fr; /* one column on mobile */
@@ -390,7 +386,7 @@ form#quizForm {
   .keyterms,
   .tableofcontent,
   .abstract {
-    grid-column: 1 ;
+    grid-column: 1 /*!important*/;
   }
 
   /* ------------------------------------------ */
@@ -399,15 +395,15 @@ form#quizForm {
 
   .side-caption,
   .side-captionleft {
-    flex-direction: column ;
+    flex-direction: column  /*!important*/;
     text-align: center;
     gap: 12px;
   }
 
   .side-caption img,
   .side-captionleft img {
-    width: 90% ;
-    height: auto;
+    width: 90%  /*!important*/;
+    height: auto  /*!important*/;
     max-width: 300px;
     margin: 0 auto;
   }
@@ -418,6 +414,6 @@ form#quizForm {
     text-align: center;
     padding: 0 10px;
   }
-  }
+}
 
 }
