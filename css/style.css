@@ -6,6 +6,13 @@
     padding: 0;
 }
 
+/* makes images responsive */
+img { 
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* changes to the links style */
 a { 
     color: black;
@@ -359,6 +366,39 @@ form#quizForm {
 .image-grow img:hover {
   transform: scale(1.1);  /* Slightly enlarges the image when hovered */
 }
+/* Medium screens: tablets / small laptops */
+@media (max-width: 1024px) {
+
+  /*tighten the main grid so it fits better on medium screens */
+  main {
+    max-width: 1000px;
+    margin: 24px auto;
+    padding: 12px;
+    gap: 18px;
+  }
+  /*navigation:reduce spacing and allow wrapping earlier */
+  nav ul {
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+  nav a {
+    font-size: 16px;
+  }
+  /*the abstract + ToC should sit side-by-side but with less crowding on medium screens */
+  .abstract {
+    grid-column: 1;
+  }
+
+  .tableofcontent {
+    grid-column: 2;
+  }
+
+  /*aboutpage: bring the two columns closer */
+  .about-container {
+    padding: 20px;
+    gap: 18px;
+  }
+}
 
 /* ------------------------------------------ */
 /* MOBILE FIXES FOR ALL PAGES) */
@@ -433,4 +473,4 @@ form#quizForm {
   }
 }
 
-}
+
